@@ -36,7 +36,8 @@ This project is designed for Final Year B.Tech and also suitable for showcasing 
 
 6.NextAuth / JWT Authentication
 
-📁 Project Structure
+📁 Project Structure :-
+
 smart-traffic-violation-system/
 ├── app/
 │   ├── page.js

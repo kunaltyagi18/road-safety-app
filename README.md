@@ -1,87 +1,82 @@
-🚦 Smart Traffic Violation Reporting System
+Smart Traffic Violation Reporting System
+Project Overview
 
-A full-stack web application built using Next.js that allows citizens to report traffic violations with images and enables administrators to verify reports and assign penalties.
+This is a full-stack Smart Traffic Violation Reporting System built using Next.js (App Router), MongoDB, and Tailwind CSS.
+Citizens can report traffic violations, and admins can verify them and assign penalties automatically.
 
-This project is designed for Final Year B.Tech and also suitable for showcasing on GitHub and resumes.
+Features
+Citizen
 
-🔥 Features
+Register & Login
 
-👤 Citizen Registration & Login
+Upload traffic violation image
 
-🚨 Report Traffic Violations
+Select violation type: No Helmet, Red Light Jump, Wrong Parking
 
-📷 Upload Violation Images as Proof
+Auto save location & date
 
-📍 Location-Based Reporting
+View submitted reports and penalty status
 
-🛂 Admin Verification Panel
+Admin
 
-💸 Penalty Assignment & Tracking
+Secure admin login
 
-📊 Dashboard for Reports
+View all reports
 
-🔐 Role-Based Access (Citizen & Admin)
+Approve or reject reports
 
-🛠️ Tech Stack
+Auto assign penalties
 
-1.Next.js (Full Stack)
+Penalty System
+Violation	Penalty
+No Helmet	₹1000
+Red Light Jump	₹1500
+Wrong Parking	₹500
+Tech Stack
 
-2.MongoDB
+Frontend: Next.js (App Router), Tailwind CSS, JavaScript
 
-3.Tailwind CSS
+Backend: Next.js API Routes, MongoDB (Mongoose)
 
-4.API Routes (Next.js Backend)
+Authentication: JWT (httpOnly cookies)
 
-5.Cloudinary / Local Storage for Images
+Password Hashing: bcryptjs
 
-6.NextAuth / JWT Authentication
+Image Upload: Base64
 
-📁 Project Structure :-
+Installation
 
-smart-traffic-violation-system/
-├── app/
-│   ├── page.js
-│   ├── report/
-│   ├── dashboard/
-│   ├── api/
-│   └── login/
-│
-├── components/
-├── models/
-├── lib/
-├── utils/
-├── public/
-├── README.md
-└── package.json
+Clone the repository:
 
-🚀 How to Run Locally
-git clone https://github.com/your-username/smart-traffic-violation-system
-cd smart-traffic-violation-system
+git clone https://github.com/your-username/smart-traffic-system.git
+cd smart-traffic-system
+
+
+Install dependencies:
+
 npm install
+
+
+Setup environment variables (.env):
+
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+
+Running the Project
 npm run dev
 
 
-> Open browser and go to:
-👉 http://localhost:3000
+Frontend & backend are together via Next.js API Routes
 
-📌 Use Case
+Visit: http://localhost:3000
 
-1.This system helps traffic authorities by:
+Future Improvements
 
-2.Digitizing traffic violation reporting
+Real-time location tracking
 
-3.Encouraging citizen participation
+Automatic image violation detection (AI)
 
-4.Reducing manual paperwork
+Notifications for citizens about report status
 
-5.Improving road safety and transparency
-
-🔮 Future Scope
-
-1.AI-based automatic violation detection
-
-2.Face blur for privacy protection
-
-3.Mobile App version
-
-4.Integration with Government e-Challan systems
+Multi-language support
